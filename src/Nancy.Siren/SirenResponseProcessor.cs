@@ -29,7 +29,8 @@
             {
                 return new ProcessorMatch
                 {
-                    ModelResult = MatchResult.DontCare,
+                    //TODO: ModelResult is hacked! it needs to be Exact match even though DontCare should be enough.
+                    ModelResult = MatchResult.ExactMatch,
                     RequestedContentTypeResult = MatchResult.ExactMatch
                 };
             }
@@ -38,7 +39,8 @@
             {
                 return new ProcessorMatch
                 {
-                    ModelResult = MatchResult.DontCare,
+                    //TODO: ModelResult is hacked! it needs to be Exact match even though DontCare should be enough.
+                    ModelResult = MatchResult.ExactMatch,
                     RequestedContentTypeResult = MatchResult.NonExactMatch
                 };
             }
